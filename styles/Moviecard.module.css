@@ -1,0 +1,223 @@
+.movieCard {
+  color: rgba(0, 0, 0, 0.9);
+  margin-top: 150px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 780px;
+  height: 740px;
+  background: #f0f0ed;
+  border-radius: 5px;
+  position: relative;
+}
+
+.title1 {
+  color: black;
+  background: red;
+  max-width: 400px;
+  display: table;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 8px;
+  transform: skewY(-5deg);
+  border-left: 10px solid red;
+}
+
+.hero {
+  height: 342px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.hero:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background: red;
+  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_bg.jpg');
+  z-index: -1;
+
+  transform: skewY(-2.2deg);
+  transform-origin: 0 0;
+
+  -webkit-backface-visibility: hidden;
+}
+
+.cover {
+  position: absolute;
+  top: 160px;
+  left: 40px;
+  z-index: 2;
+}
+
+.details {
+  padding: 190px 0 0 280px;
+}
+
+.details .title2 {
+  color: red;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  border-left: 10px solid red;
+  padding: 10px;
+  transform: skewY(-2deg);
+  padding-left: 20px;
+}
+
+.details .likes {
+  margin-left: 24px;
+}
+
+.details .likes:before {
+  content: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon_like.png');
+  position: relative;
+  top: 2px;
+  padding-right: 7px;
+}
+
+.details .title {
+  color: white;
+  font-size: 44px;
+  margin-bottom: 13px;
+  position: relative;
+}
+
+.title span {
+  position: absolute;
+  top: 3px;
+  margin-left: 12px;
+  background: #c4af3d;
+  border-radius: 5px;
+  color: #544c21;
+  font-size: 14px;
+  padding: 0px 4px;
+}
+
+.description {
+  bottom: 0px;
+  height: 200px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #b1b0ac;
+}
+
+.column1 {
+  padding-left: 50px;
+  padding-top: 120px;
+  width: 220px;
+  float: left;
+  text-align: center;
+}
+
+.tag {
+  background: white;
+  border-radius: 10px;
+  padding: 3px 8px;
+  font-size: 14px;
+  margin-right: 4px;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background: #ddd;
+}
+
+.column2 {
+  padding-left: 41px;
+  padding-top: 30px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: black;
+  float: left;
+}
+
+.avatars {
+  margin-top: 23px;
+}
+
+.avatars img {
+  cursor: pointer;
+}
+
+.avatars img:hover {
+  opacity: 0.6;
+}
+
+.avatars a:hover {
+  text-decoration: none;
+}
+
+.info {
+  background: red;
+  padding: 8px;
+}
+
+.genre {
+  padding: 5px;
+  border-left: 10px solid red;
+}
+
+.moreInfo {
+  margin-top: 20px;
+  display: flex;
+  font-weight: 600;
+}
+
+.moreInfo p {
+  border: 5px solid red;
+  margin-right: 10px;
+  padding-left: 8px;
+}
+
+.genres {
+  margin: 0 auto;
+  display: flex;
+  grid-gap: 10px;
+  position: absolute;
+  bottom: 390px;
+  right: 0;
+  transform: rotate(-2.2deg);
+  font-weight: 800;
+}
+
+.info {
+  display: inline-block;
+  font-weight: 800;
+  margin-left: 8px;
+  color: white;
+}
+
+.columTwo {
+  margin-top: 80px;
+}
+
+.rottenScoreVote {
+  font-weight: 800;
+  background: red;
+  display: inline-block;
+  margin-left: 5px;
+  padding: 8px;
+  color: white;
+}
+
+.rottenScore {
+  position: absolute;
+  bottom: 300px;
+  left: 60px;
+  padding-left: 5px;
+  font-weight: 600;
+  border: 5px solid red;
+  margin-right: 10px;
+}
